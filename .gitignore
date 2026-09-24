@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS and editors
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Local scratch (build/out/ is the shipped artifact and stays tracked)
+*.tmp
+*.bak

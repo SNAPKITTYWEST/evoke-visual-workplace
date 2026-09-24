@@ -1,5 +1,7 @@
 # evoke-visual-workplace
 
+[![verify](https://github.com/SNAPKITTYAGENT9NOVA/evoke-visual-workplace/actions/workflows/verify.yml/badge.svg)](https://github.com/SNAPKITTYAGENT9NOVA/evoke-visual-workplace/actions/workflows/verify.yml)
+
 Portable **offline** build of the Visual Workplace: ColorForth vocabulary,
 an Open Dylan–style library, and the Evoke BEAM (Elixir/OTP) agent mesh.
 Zero network. No HTTP server. Raw code is the product.
@@ -17,6 +19,16 @@ Copies/assembles sources into `build/out/`, writes `MANIFEST.txt`,
 `colorforth/WORKPLACE.CF`, the Dylan library, `beam/`, `bridge-map.json`,
 and the standalone HTML viewer. Exit 0 on success. Verified: a fresh
 `./evoke` run reproduces the shipped `build/out/` byte-for-byte.
+
+## Verify
+
+```bash
+make verify
+```
+
+Runs `./evoke`, the DYLN frame smoke test, then re-runs the build and diffs
+`build/out/` to prove the output is reproducible byte-for-byte. CI runs the
+same checks on every push to `main`.
 
 ## Layout
 

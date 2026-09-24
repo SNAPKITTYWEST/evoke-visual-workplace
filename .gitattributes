@@ -1,0 +1,7 @@
+# Keep the build script and sources Unix-clean on every checkout
+evoke text eol=lf
+scripts/*.py text eol=lf
+*.cf text eol=lf
+*.dylan text eol=lf
+*.ex text eol=lf
+*.exs text eol=lf
